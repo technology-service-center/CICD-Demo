@@ -44,6 +44,9 @@ test('contact us button works', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Drop us a Message' })).toBeVisible();
 });
 
-test('test failure example', async ({ page }) => {
-  await page.getByRole('link', { name: 'THIS DOES NOT EXIST' }).click();
-});
+//This last test fails on purpose, so you can see the output from a test failing (reporters and screenshots).
+//It is commented out so it doesn't send discord messages every day, but if you want to test it, you can uncomment it.
+
+// test('test failure example', async ({ page }) => {
+//   await page.getByRole('link', { name: 'THIS DOES NOT EXIST' }).click();
+// });
