@@ -17,6 +17,7 @@
   "homepage": "https://github.com/technology-service-center/CICD-Demo#readme",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.8"
+    "@types/node": "^25.0.8",
+    "playwright-ctrf-json-reporter": "^0.0.27"
   }
 }
