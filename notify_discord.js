@@ -1,11 +1,9 @@
 var fs = require('fs');
-//adding comment to be able to commit
 fs.readFile('ctrf/ctrf-report.json', 'utf-8', function (err, data) {
     if (err) throw err;
 
     var obj = JSON.parse(data);
     console.log(obj.results.summary.failed);
-    // var failed = JSON.parse(obj.summary);
     if(obj.results.summary.failed != 0){
         var failed_tests = [];
         for(var i = 0; i < obj.results.summary.tests; i++){
